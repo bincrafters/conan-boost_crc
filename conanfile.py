@@ -2,14 +2,14 @@ from conans import ConanFile, tools, os
 
 class BoostCrcConan(ConanFile):
     name = "Boost.Crc"
-    version = "1.64.0"
+    version = "1.65.1"
     short_paths = True
     url = "https://github.com/bincrafters/conan-boost-crc"
-    description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
+    description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_names = ["crc"]
-    requires =  "Boost.Config/1.64.0@bincrafters/testing", \
-                      "Boost.Integer/1.64.0@bincrafters/testing"
+    requires =  "Boost.Config/1.65.1@bincrafters/testing", \
+                      "Boost.Integer/1.65.1@bincrafters/testing"
  
     def source(self):
         boostorg_github = "https://github.com/boostorg"
