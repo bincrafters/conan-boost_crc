@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostCrcConan(ConanFile):
     name = "boost_crc"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-crc"
+    url = "https://github.com/bincrafters/conan-boost_crc"
     
     lib_short_names = ["crc"]
     is_header_only = True
