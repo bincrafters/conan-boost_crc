@@ -4,7 +4,7 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.68.0@bincrafters/testing")
+base = python_requires("boost_base/1.69.0@bincrafters/testing")
 
 class BoostCrcConan(base.BoostBaseConan):
     name = "boost_crc"
@@ -12,6 +12,8 @@ class BoostCrcConan(base.BoostBaseConan):
     lib_short_names = ["crc"]
     header_only_libs = ["crc"]
     b2_requires = [
+        "boost_array",
         "boost_config",
-        "boost_integer"
+        "boost_integer",
+        "boost_type_traits"
     ]
